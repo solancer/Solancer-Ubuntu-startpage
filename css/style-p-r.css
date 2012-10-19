@@ -1,0 +1,142 @@
+/*
+   Solancer's Ubuntu Startpage 
+   
+   Copyright 2012 srinivas <srinivas@solancer.com>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+*/
+
+.panelr {
+position: absolute;
+top: 65px;
+right: 0;
+display: none;
+background: #000000;
+border:2px solid #ffffff;
+border-radius:20px 0px 0px 20px;
+-moz-border-radius:20px 0px 0px 20px;
+-webkit-border-radius:20px 0px 0px 20px;
+width: 330px;
+height: auto;
+padding: 30px 50px 30px 30px;
+filter: alpha(opacity=85);
+opacity: .85;
+font-weight:bold;
+box-shadow:0 0 10px #FFFFFF inset;
+-moz-box-shadow:0 0 10px #FFFFFF inset;
+-webkit-box-shadow:0 0 10px #FFFFFF inset;
+}
+
+.panelr p{
+margin: 0 0 15px 0;
+padding: 0;
+color: #cccccc;
+font-family:'Ubuntu';
+}
+
+.panelr a, .panel a:visited{
+margin: 0;
+padding: 0;
+font-family:'Ubuntu';
+color: #f2f2f2;
+text-decoration: none;
+line-height: 2em;
+}
+
+.panelr a:hover, .panel a:visited:hover{
+margin: 0;
+padding: 0;
+color: #DD4814;
+text-decoration: none;
+}
+
+a.triggerr{
+position: absolute;
+text-decoration: none;
+top: 185px; right: 0;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 20px 15px 20px 40px;
+font-weight: 700;
+background:#333333 url(../images/ubuntu12.gif) 15% 55% no-repeat;
+border:1px solid #444444;
+border-radius:20px 0px 0px 20px;
+-moz-border-radius:20px 0px 0px 20px;
+-webkit-border-radius:20px 0px 0px 20px;
+ box-shadow:1px 1px 5px #222;
+display: block;
+}
+
+a.triggerr:hover{
+position: absolute;
+text-decoration: none;
+top: 185px; right: 0;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 20px 20px 20px 40px;
+font-weight: 700;
+background:#222222 url(../images/ubuntu12.gif) 15% 55% no-repeat;
+border:1px solid #444444;
+border-radius:20px 0px 0px 20px;
+-moz-border-radius:20px 0px 0px 20px;
+-webkit-border-radius:20px 0px 0px 20px;
+display: block;
+}
+
+a.active.triggerr {
+background:#222222 url(../images/minus.png) 15% 55% no-repeat;
+}
+
+.columnsr{
+clear: both;
+width: 330px;
+padding: 0 0 20px 0;
+line-height: 22px;
+}
+
+.colleftr{
+float: left;
+width: 130px;
+line-height: 22px;
+}
+
+.colrightr{
+float: right;
+width: 130px;
+line-height: 22px;
+}
+
+ul{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+ul li{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+hr{
+background-color: #333333;
+height: 1px;
+}

@@ -1,0 +1,242 @@
+<!--
+   Solancer's Ubuntu Startpage 
+   
+   Copyright 2012 srinivas <srinivas@solancer.com>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Solancer's Ubuntu startpage</title>
+<script type="text/javascript" src="dock-menu/js/jquery.js"></script>
+<script type="text/javascript" src="dock-menu/js/interface.js"></script>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style-p-l.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style-p-r.css" type="text/css" media="screen" />
+<link href="dock-menu/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/search-style.css" media="screen">
+</head>
+
+<body>
+ <div id=top> 
+
+<div id="logo">
+<img src="images/ubuntu1.gif" alt="Logo" height="40" width="40" />
+</div>
+
+</div>
+
+<div id="date-wrap">
+<div id="date-main">
+
+<script type="text/javascript">
+
+ var dayName = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+
+ var monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+ var now = new Date
+
+ document.write("" + dayName[now.getDay()] + "<br><span id=month>" + monName[now.getMonth()] + " "+now.getDate() +"")
+ </script>
+
+ </div>
+</div>
+
+<div id="search">
+
+	<form method="get" action="http://www.google.com/search" target="gsearch">
+		<input name="q" type="text" maxlength="255" value=""> 
+		<input type="submit" value="Search" />
+	</form>
+
+
+</form>
+</div>	
+
+
+
+<script type = "text/javascript" > $(document).ready(
+
+function() {
+  $('#dock2').Fisheye({
+    maxWidth: 90,
+    items: 'a',
+    itemsText: 'span',
+    container: '.dock-container2',
+    itemWidth: 45,
+    proximity: 80,
+    alignment: 'left',
+    valign: 'bottom',
+    halign: 'center'
+  })
+}); </script>
+
+<!--B-Dock-->
+<div class="dock" id="dock2">
+  <div class="dock-container2">
+     <a class="dock-item2" href="http://facebook.com" target="_blank"><span>Facebook</span>
+     <img src="dock-menu/icons/facebook.png" alt="Facebook" /></a> 
+
+     <a class="dock-item2" href="http://twitter.com" target="_blank"><span>Twitter</span>
+     <img src="dock-menu/icons/twitter.png" alt="Facebook" /></a> 
+
+     <a class="dock-item2" href="http://gmail.com" target="_blank"><span>Gmail</span>
+     <img src="dock-menu/icons/gmail.png" alt="Gmail" /></a> 
+
+     <a class="dock-item2" href="http://aim.com" target="_blank"><span>AIM</span>
+     <img src="dock-menu/icons/aim.png" alt="AIM" /></a> 
+     <a class="dock-item2" href="http://blogger.com" target="_blank"><span>Blogger</span>
+     <img src="dock-menu/icons/blogger.png" alt="Blogger" /></a>
+
+     <a class="dock-item2" href="http://stumbleupon.com" target="_blank"><span>Stumbleupon</span>
+     <img src="dock-menu/icons/stumbleupon.png" alt="Stumbleupon" /></a> 
+
+    <a class="dock-item2" href="http://yahoo.com" target="_blank"><span>Yahoo!</span>
+    <img src="dock-menu/icons/yahoo.png" alt="Yahoo!" /></a> 
+
+    <a class="dock-item2" href="http://flickr.com" target="_blank"><span>Flickr</span>
+    <img src="dock-menu/icons/flickr.png" alt="Flickr" /></a> 
+
+    <a class="dock-item2" href="http://lastfm.com" target="_blank"><span>Last-fm</span>
+    <img src="dock-menu/icons/lastfm.png" alt="Last-fm" /></a> 
+
+    <a class="dock-item2" href="http://picasa.com" target="_blank"><span>Picasa</span>
+    <img src="dock-menu/icons/picasa.png" alt="Picasa" /></a> 
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".trigger").click(function(){
+    $(".panel").toggle("fast");
+    $(this).toggleClass("active");
+    return false;
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".triggerr").click(function(){
+    $(".panelr").toggle("fast");
+    $(this).toggleClass("active");
+    return false;
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$('#logo').click(function() {
+    $('.trigger, .triggerr').toggle(150);
+    return false;
+  });
+});
+</script>
+
+
+<div class="panel">
+
+  <div style="clear:both;"></div>
+
+<div style="text-align:center; ">
+	<p>Ubuntu related sites</p>
+</div>
+
+  <div class="columns">
+    <div class="colleft">
+    <h3>Navigation</h3>
+      <ul>
+        <li><a href="http://askubuntu.com" title="askubuntu">askubuntu</a></li>
+        <li><a href="http://webupd8.org" title="webupd">webupd8</a></li>
+        <li><a href="http://omgubuntu.co.uk" title="Digg">omgubuntu</a></li>
+        <li><a href="http://markshuttleworth.com" title="omgubuntu">mark-shuttleworth's blog</a></li>
+      </ul>
+    </div>
+  
+  
+    <div class="colright">
+      <h3>Social Stuff</h3>
+      <ul>
+ 
+        <li><a href="http://solancer.blogspot.com" title="Solancer">Solancer</a></li>
+        <li><a href="http://www.dailyubuntu.com/" title="dailyubuntu">dailyubuntu</a></li>
+        <li><a href="http://planet.ubuntu.com/" title="Planet Ubuntu">Planet Ubuntu</a></li>
+        <li><a href="http://2buntu.com/" title="2ubuntu">2ubuntu</a></li>
+        <li><a href="http://mostlylinux.wordpress.com/" title="mostlylinux">mostlylinux</a></li>
+                        
+      </ul>
+    </div>
+  </div>
+<div style="clear:both;"></div>
+
+</div>
+<a class="trigger" href="#"></a>
+
+<div class="panelr">
+
+<div style="clear:both;"></div>
+
+<div style="text-align:center; ">
+	<p>Ubuntu related sites</p>
+</div>
+
+  <div class="columns">
+    <div class="colleft">
+    <h3>Navigation</h3>
+      <ul>
+        <li><a href="http://askubuntu.com" title="askubuntu">askubuntu</a></li>
+        <li><a href="http://webupd8.org" title="webupd">webupd8</a></li>
+        <li><a href="http://omgubuntu.co.uk" title="Digg">omgubuntu</a></li>
+        <li><a href="http://markshuttleworth.com" title="omgubuntu">mark-shuttleworth's blog</a></li>
+      </ul>
+    </div>
+  
+  
+    <div class="colright">
+      <h3>Social Stuff</h3>
+      <ul>
+ 
+        <li><a href="http://solancer.blogspot.com" title="Solancer">Solancer</a></li>
+        <li><a href="http://www.dailyubuntu.com/" title="dailyubuntu">dailyubuntu</a></li>
+        <li><a href="http://planet.ubuntu.com/" title="Planet Ubuntu">Planet Ubuntu</a></li>
+        <li><a href="http://2buntu.com/" title="2ubuntu">2ubuntu</a></li>
+        <li><a href="http://mostlylinux.wordpress.com/" title="mostlylinux">mostlylinux</a></li>
+                        
+      </ul>
+    </div>
+  </div>
+<div style="clear:both;"></div>
+
+</div>
+<a class="triggerr" href="#"></a>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,124 @@
+/*
+   Solancer's Ubuntu Startpage 
+   
+   Copyright 2012 srinivas <srinivas@solancer.com>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+*/
+
+* :focus { outline: 0; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(OsJ2DjdpjqFRVUSto6IffD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+
+#logo, .trigger, .triggerr, #search, .search-bar:hover{
+cursor:url(../images/cursor.png), default;
+}
+
+body{ background-color:#dedede;
+  font: 11px Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+
+}
+
+#top{ background-image: url("../images/bg-top.png");
+      background-repeat: repeat-x;
+      height:50px;
+      --moz-box-shadow: 0 0 10px #555;
+      -webkit-box-shadow: 0 0 10px #555;
+      box-shadow: 0 0 10px #555 
+    }
+
+
+#date {
+	height:50px;
+	margin:0px auto;
+	margin-top:60px;
+	text-align:center;
+	font-family:"Vrinda";
+	text-transform:uppercase;
+	font-size:28px;
+	color:#333;
+}
+
+ #date-main{
+    padding-top:5%;
+    text-align:center;
+    font-family:"Vrinda";
+    text-transform:uppercase;
+    font-size:28px;
+    color:#333;"
+}  
+
+#month {
+	font-size:18px;
+	color:#999;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+
+#search {
+
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+    margin-top:8%;
+    height:30px;
+    width: 600px;     	
+}
+    
+
+.search-bar {
+	  color: #000000;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 19px;
+    width: 560px;
+    border:0px;
+    border-radius:15px;
+   -moz-border-radius:15px;
+   -webkit-border-radius:15px; 
+}
+
+#logo{ 	    
+            margin-left: auto;
+    	      margin-right: auto;
+            clear:both;
+            padding-top: 5px;
+            height:40px;
+            width: 40px;
+    }
+
